@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Hardware</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Hardware</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="busqueda" placeholder="Buscar productos..." onkeyup="buscarProducto()">
+    </header>
+
+    <section id="inicio" class="fade-in">
+        <h2>Bienvenido a la mejor tienda de hardware</h2>
+        <p>Encuentra los mejores componentes para tu PC de alto rendimiento.</p>
+    </section>
+
+    <section id="productos" class="fade-in">
+        <h2>Nuestros Productos</h2>
+        <div id="lista-productos" class="productos-grid">
+            <div class="producto"><h3>RTX 5090</h3><p>Potente GPU para gaming extremo.</p><button onclick="agregarAlCarrito('RTX 5090')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Intel i9 14ª Gen</h3><p>Procesador de alto rendimiento.</p><button onclick="agregarAlCarrito('Intel i9 14ª Gen')">Agregar al carrito</button></div>
+            <div class="producto"><h3>AMD Ryzen 9</h3><p>Rendimiento increíble para multitarea.</p><button onclick="agregarAlCarrito('AMD Ryzen 9')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Placa Base ASUS Z790</h3><p>Compatibilidad y velocidad óptimas.</p><button onclick="agregarAlCarrito('Placa Base ASUS Z790')">Agregar al carrito</button></div>
+            <div class="producto"><h3>64GB RAM DDR5</h3><p>Memoria ultrarrápida para profesionales.</p><button onclick="agregarAlCarrito('64GB RAM DDR5')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Fuente Corsair 1250W</h3><p>Potencia confiable y silenciosa.</p><button onclick="agregarAlCarrito('Fuente Corsair 1250W')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Cooler Master Liquid</h3><p>Refrigeración líquida eficiente.</p><button onclick="agregarAlCarrito('Cooler Master Liquid')">Agregar al carrito</button></div>
+            <div class="producto"><h3>SSD M.2 5TB</h3><p>Almacenamiento ultrarrápido y amplio.</p><button onclick="agregarAlCarrito('SSD M.2 5TB')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Caja NZXT H710i</h3><p>Chasis elegante y espacioso.</p><button onclick="agregarAlCarrito('Caja NZXT H710i')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Monitor 4K 144Hz</h3><p>Imágenes nítidas y fluidas.</p><button onclick="agregarAlCarrito('Monitor 4K 144Hz')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Teclado Mecánico RGB</h3><p>Resistencia y personalización.</p><button onclick="agregarAlCarrito('Teclado Mecánico RGB')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Mouse Gaming</h3><p>Precisión y ergonomía avanzadas.</p><button onclick="agregarAlCarrito('Mouse Gaming')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Silla Ergonómica</h3><p>Comodidad para largas sesiones.</p><button onclick="agregarAlCarrito('Silla Ergonómica')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Auriculares 7.1</h3><p>Sonido envolvente y claro.</p><button onclick="agregarAlCarrito('Auriculares 7.1')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Tarjeta de Sonido</h3><p>Calidad de audio profesional.</p><button onclick="agregarAlCarrito('Tarjeta de Sonido')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Controlador RGB</h3><p>Iluminación personalizable.</p><button onclick="agregarAlCarrito('Controlador RGB')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Ventilador RGB</h3><p>Refrigeración con estilo.</p><button onclick="agregarAlCarrito('Ventilador RGB')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Adaptador Wi-Fi 6</h3><p>Velocidad inalámbrica extrema.</p><button onclick="agregarAlCarrito('Adaptador Wi-Fi 6')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Disco Duro 10TB</h3><p>Almacenamiento masivo.</p><button onclick="agregarAlCarrito('Disco Duro 10TB')">Agregar al carrito</button></div>
+            <div class="producto"><h3>Capturadora 4K</h3><p>Grabación en ultra alta definición.</p><button onclick="agregarAlCarrito('Capturadora 4K')">Agregar al carrito</button></div>
+        </div>
+    </section>
+
+    <section id="contacto" class="fade-in">
+        <h2>Contacto</h2>
+        <p>¿Tienes dudas? ¡Escríbenos!</p>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Hardware. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
